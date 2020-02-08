@@ -1,0 +1,25 @@
+{
+  "name": "script-intratime",
+  "version": "1.0.0",
+  "description": "un script para una shitty app",
+  "main": "script-intratime-de-los-huevos.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "eslint": "^6.8.0",
+    "fetch-cookie": "^0.7.2",
+    "form-data": "^2.3.3",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "moment-duration-format": "^2.3.2",
+    "node-fetch": "^2.6.0",
+    "qs": "^6.9.1",
+    "utf8": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node script-intratime-de-los-huevos.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tonetete",
+  "license": "ISC"
+}
