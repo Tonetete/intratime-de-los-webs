@@ -178,7 +178,6 @@ class Intratime {
   }
 
   run() {
-    this.getHoursWeek();
     console.info("Elije una acción para el intratime de los webs:");
     console.info("1)checkin\n2)checkout\n3)pause\n4)return\n5)ver horas");
 
