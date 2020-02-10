@@ -98,9 +98,14 @@ class Intratime {
         keyDays.forEach(key => {
           clockingDataByDay[key].clockings.reverse();
           let lastClocking = clockingDataByDay[key].clockings[0];
-          clockingDataByDay[key].clockings = clockingDataByDay[
-            key
-          ].clockings.slice(1);
+          if (clockingDataByDay[key].clockings.length === 1) {
+            lastClocking = null;
+          } else {
+            clockingDataByDay[key].clockings = clockingDataByDay[
+              key
+            ].clockings.slice(1);
+          }
+
           const secondsWorked = clockingDataByDay[key].clockings.reduce(
             (accum, currentClocking, index) => {
               let timeDiff = 0;
@@ -173,6 +178,7 @@ class Intratime {
   }
 
   run() {
+    this.getHoursWeek();
     console.info("Elije una acción para el intratime de los webs:");
     console.info("1)checkin\n2)checkout\n3)pause\n4)return\n5)ver horas");
 
