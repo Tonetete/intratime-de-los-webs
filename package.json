@@ -4,7 +4,7 @@
   "description": "un script para una shitty app",
   "main": "script-intratime-de-los-huevos.js",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "eslint": "^6.8.0",
     "fetch-cookie": "^0.7.2",
     "form-data": "^2.3.3",
